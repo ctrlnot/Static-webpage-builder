@@ -1,0 +1,19 @@
+{
+  "name": "static-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && copyfiles -f src/*.js dist && copyfiles -f src/assets/* dist/assets && pug --pretty src --out dist && stylus src --out dist",
+    "watch": "nodemon --watch src -e pug,styl,js --exec npm run build"
+  },
+  "author": "",
+  "dependencies": {
+    "copyfiles": "^1.2.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.6.1",
+    "stylus": "^0.54.5"
+  }
+}
