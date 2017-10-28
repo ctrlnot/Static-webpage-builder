@@ -5,3 +5,26 @@ html(lang="en")
     link(rel="stylesheet", href="test.css")
   body
     h1 Pug works!
+    h3 Numbers
+
+    //- Example of iterating through objects and use as content
+    - 
+      let numbers = [
+        {
+          numWord: "one",
+          numDigit: "1",
+        },{
+          numWord: "two",
+          numDigit: "2",
+        },{
+          numWord: "three",
+          numDigit: "3",
+        }
+      ];
+
+    mixin displayNums(nums)
+      li= nums.numWord + " = " + nums.numDigit
+
+    ul
+      for num in numbers
+        +displayNums(num)
