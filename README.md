@@ -2,7 +2,7 @@
 A basic template to create static webpages using node, pug and stylus.
 
 ## Setup:
-  1. Install nodejs v6.9.4.
+  1. Install nodejs v6.11.5
   2. Go to your project directory.
   3. Install node modules.
   

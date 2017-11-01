@@ -10,10 +10,10 @@
   "author": "",
   "dependencies": {
     "copyfiles": "^1.2.0",
-    "nodemon": "^1.11.0",
-    "pug": "^2.0.0-rc.3",
+    "nodemon": "^1.12.1",
+    "pug": "^2.0.0-rc.4",
     "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^2.6.1",
+    "rimraf": "^2.6.2",
     "stylus": "^0.54.5"
   }
 }
